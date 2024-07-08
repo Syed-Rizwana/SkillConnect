@@ -1,0 +1,116 @@
+/* Contact.css
+.con{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3kzj0PsGxRKtU07DIl6-kqBnP81wB2eCUN0FyCipWag&s");
+background-repeat: no-repeat;
+height:800px;
+background-size: cover;
+position:relative;
+}
+.contact-form {
+  max-width: 800px;
+  
+  padding: 20px;
+  background-image: url("https://companyformationindia.com/images/c.jpg");
+  height: 800px;
+  border-radius: 5px;
+} 
+
+.contact-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group1 {
+  margin-bottom: 20px;
+}
+
+.form-group1 input,
+.form-group1 textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group1 textarea {
+  height: 150px;
+}
+
+.contact1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#c {
+  display: block;
+  width: 25%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ed5478;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#c:hover {
+  background-color: #ed5478;
+}  */
+/* Contact.css */
+.contacti{
+  background-repeat: no-repeat;
+  background-image: url("https://img.freepik.com/premium-photo/professional-photography-pattern-clouds_927707-2601.jpg");
+  height: 900px;
+  position:absolute;
+  background-size: cover;
+  width:2000px;
+}
+.con {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 420px;
+  margin-top: 130px;
+ 
+}
+
+.con h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.con form {
+  display: flex;
+  flex-direction: column;
+}
+
+.con input,
+.con textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.con input[type='submit'] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.con input[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: Add media queries for responsive design */
+.u{
+  height:100px;
+}

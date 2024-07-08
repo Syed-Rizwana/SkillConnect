@@ -1,0 +1,96 @@
+.upload-form-container {
+  max-width: 1000px;
+  margin-top: 50px;
+  margin-left:400px;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  position: relative; /* Positioning context for absolute children */
+}
+
+.uploadi {
+  display: flex;
+  background-image: url("https://cdn.pixabay.com/photo/2018/08/31/18/17/fantasy-3645263_1280.jpg");
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  padding: 20px; /* Add some padding for better spacing */
+  position: relative; /* Positioning context for children */
+  overflow: hidden; /* Hide overflow to keep everything within bounds */
+}
+
+.image-container {
+  position: absolute; /* Position absolutely within the form container */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height for scrolling */
+  overflow: hidden; /* Hide overflow to keep everything within bounds */
+  z-index: 1; /* Place above form */
+  pointer-events: none; /* Allow interactions to pass through */
+}
+
+.image-container p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+  color: #FF416C;
+  width: 100%;
+  margin-top: 100px; /* Remove default margin */
+  text-align: center;
+  position:absolute; 
+  white-space: nowrap; /* Prevent text from wrapping */
+  animation: scrollLeftToRight 20s linear infinite; /* Add scrolling animation */
+}
+
+@keyframes scrollLeftToRight {
+  from {
+    left: -100%; /* Start off screen to the right */
+  }
+  to {
+    left: 100%; /* End off screen to the left */
+  }
+}
+
+.form-container {
+  position: relative; /* Positioning context for form */
+  z-index: 2; /* Ensure form is above scrolling text */
+  background: white; /* Slight background to distinguish */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* Adjusted for better spacing */
+  width: 100%; /* Ensure form group takes full width */
+}
+
+.form-group label {
+  width: 200px; /* Fixed width for labels */
+  text-align: left;
+  color:#75050b;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="file"] {
+  width: calc(100% - 200px); /* Adjust width to fit the remaining space */
+  padding: 10px;
+  border: 1px solid #252425;
+  border-radius: 5px;
+ 
+
+}
+
+.sub {
+  background-color: #FF416C;
+  color: #fff; /* Ensure text color is readable */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

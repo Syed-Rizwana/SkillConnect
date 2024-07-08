@@ -1,0 +1,114 @@
+.ab {
+  background-image: url("https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-40199.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+  position: relative;
+}
+
+.cd {
+  color: #FF416C;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  white-space: nowrap;
+}
+
+.ef {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  background-color: #FF416C;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.about-us, .features, .gallery, .events, .newsletter {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.about-us h2, .features h2, .gallery h2, .events h2, .newsletter h2 {
+  color: #FF416C;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+}
+
+.about-us p, .features ul, .events ul, .newsletter form {
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.features ul, .events ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features li, .events li {
+  margin: 10px 0;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery-images img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter .form-group {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.newsletter .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.newsletter .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #252425;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  background-color: #FF416C;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subscription-message {
+  color: #FF416C;
+  margin-top: 15px;
+  font-size: 20px;
+}

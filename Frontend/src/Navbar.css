@@ -1,0 +1,145 @@
+/* Navbar.css */
+.navbar {
+    background-color: #FF416C;
+    color: #fff;
+    padding: 0 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+   
+  }
+  
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   margin-right:25px;
+
+   
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+    margin:15px;
+   
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+  padding:0;
+    display: flex;
+    /* margin:15px; */
+  }
+  
+  .menu li {
+    margin-left: 20px;
+    position: relative; /* Ensure relative positioning for dropdown */
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .menu li a:hover {
+    color: whitesmoke;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FF416C;
+    width: 150px; /* Adjust width as needed */
+    z-index: 1000;
+  }
+  
+  .menu li:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    margin:0px;
+    list-style:none;
+  }
+  
+  .dropdown-menu li a {
+    padding: 10px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+   
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #E5385D;
+  }
+ 
+  
+  @media(max-width: 768px) {
+    .container {
+      padding: 0 20px;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+    }
+  
+    .menu li {
+      margin: 10px 0;
+    }
+  
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .line {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      margin-bottom: 5px;
+      transition: transform 0.3s ease;
+    }
+  
+    .line-1-active {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+  
+    .line-2-active {
+      opacity: 0;
+    }
+  
+    .line-3-active {
+      transform: rotate(45deg) translate(-5px, -6px);
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  }

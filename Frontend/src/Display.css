@@ -1,0 +1,53 @@
+.container3 {
+    padding: 20px;
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
+    gap: 60px; 
+    flex-wrap: wrap;
+  }
+  
+  .video-item {
+    width: 100%; /* Each item takes 50% of the container's width */
+  box-sizing: border-box;
+  padding: 10px; /* Add padding to the video items */
+  }
+  
+  .video-container {
+    margin-right: 10px; /* Adjust the spacing between the video and details */
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+  }
+  .details-container {
+    margin-left: 10px; /* Adjust the margin between video and details */
+  }
+  
+  h3 {
+    margin-bottom: 5px; 
+    color:#FF416C;
+    /* font-weight: bolder; */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;/* Reduce margin below h3 */
+  }
+  
+  #b{
+    margin-top: 5px; /* Reduce margin above paragraphs */
+    margin-bottom: 5px;
+    color:#800080;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;/* Reduce margin below paragraphs */
+  }
+  strong{
+    color:#870e2a;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .displaymain{
+    background-image: url("https://wallpapers.com/images/hd/pink-and-blue-background-zvyxjg21mo6qz6mb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:1000px;
+    width: auto;
+  }
